@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог | scriptizersha hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css"> 
+</head>
+<body>
+    <!-- Фоновые элементы -->
+    <div class="bg">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">scriptizersha hub</div>
+                <nav class="nav">
+                    <a href="index.html" class="nav__link">Главная</a>
+                    <a href="#blog" class="nav__link">Блог</a>
+                    <a href="#about" class="nav__link">Обо мне</a>
+                    <a href="#support" class="nav__link">Поддержка</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Заголовок страницы (верхняя горизонталь F-паттерна) -->
+    <section class="blog-header">
+        <div class="container">
+            <div class="blog-header__inner">
+                <h1 class="blog-header__title">Блог</h1>
+                <p class="blog-header__subtitle">Мои мысли, идеи и заметки о всякой всячине</p>
+                
+                <!-- Поиск и фильтры (важные элементы слева) -->
+                <div class="blog-filters">
+                    <input type="text" class="blog-search" placeholder="Поиск статей...">
+                    <div class="blog-categories">
+                        <button class="blog-category active">Все</button>
+                        <button class="blog-category">Технологии</button>
+                        <button class="blog-category">Лайфстайл</button>
+                        <button class="blog-category">Обучение</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Основной контент (вертикаль и горизонтали F-паттерна) -->
+    <main class="blog-content">
+        <div class="container">
+            <div class="blog-grid">
+                
+                <!-- Левая колонка - основной поток (вертикаль F) -->
+                <div class="blog-posts">
+                    
+                    <!-- Featured пост (самый важный - сверху слева) -->
+                    <article class="blog-post blog-post--featured">
+                        <div class="blog-post__image">
+                            <img src="https://via.placeholder.com/800x400" alt="Featured post">
+                            <span class="blog-post__tag">Избранное</span>
+                        </div>
+                        <div class="blog-post__content">
+                            <div class="blog-post__meta">
+                                <span class="blog-post__date">15 Января 2025</span>
+                                <span class="blog-post__category">Технологии</span>
+                            </div>
+                            <h2 class="blog-post__title">Как я создал свой первый проект</h2>
+                            <p class="blog-post__excerpt">История о том, как начать программировать и не потерять мотивацию в процессе</p>
+                            <a href="#" class="btn">Читать далее</a>
+                        </div>
+                    </article>
+
+                    <!-- Обычные посты (горизонтальные сканы F-паттерна) -->
+                    <article class="blog-post">
+                        <div class="blog-post__image">
+                            <img src="https://via.placeholder.com/400x250" alt="Post image">
+                        </div>
+                        <div class="blog-post__content">
+                            <div class="blog-post__meta">
+                                <span class="blog-post__date">12 Января 2025</span>
+                                <span class="blog-post__category">Лайфстайл</span>
+                            </div>
+                            <h3 class="blog-post__title">5 советов для продуктивной работы</h3>
+                            <p class="blog-post__excerpt">Проверенные методы повышения продуктивности</p>
+                            <a href="#" class="blog-post__link">Читать →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="blog-post__image">
+                            <img src="https://via.placeholder.com/400x250" alt="Post image">
+                        </div>
+                        <div class="blog-post__content">
+                            <div class="blog-post__meta">
+                                <span class="blog-post__date">10 Января 2025</span>
+                                <span class="blog-post__category">Обучение</span>
+                            </div>
+                            <h3 class="blog-post__title">Изучаем CSS Grid</h3>
+                            <p class="blog-post__excerpt">Полное руководство по современной вёрстке...</p>
+                            <a href="#" class="blog-post__link">Читать →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <div class="blog-post__image">
+                            <img src="https://via.placeholder.com/400x250" alt="Post image">
+                        </div>
+                        <div class="blog-post__content">
+                            <div class="blog-post__meta">
+                                <span class="blog-post__date">8 Января 2025</span>
+                                <span class="blog-post__category">Технологии</span>
+                            </div>
+                            <h3 class="blog-post__title">Тренды веб-разработки 2025</h3>
+                            <p class="blog-post__excerpt">Что стоит изучать в новом году...</p>
+                            <a href="#" class="blog-post__link">Читать →</a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Правая колонка - дополнительная информация -->
+                <aside class="blog-sidebar">
+                    
+                    <!-- Профиль автора (важно - сверху справа) -->
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-widget__title">Об авторе</h3>
+                        <div class="author-card">
+                            <img src="https://via.placeholder.com/100" alt="Author" class="author-card__avatar">
+                            <h4 class="author-card__name">scriptizersha</h4>
+                            <p class="author-card__bio">Разработчик и блогер</p>
+                            <a href="#about" class="author-card__link">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <!-- Популярные посты (второй уровень важности) -->
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-widget__title">Популярное</h3>
+                        <ul class="popular-posts">
+                            <li class="popular-posts__item">
+                                <a href="#" class="popular-posts__link">
+                                    <span class="popular-posts__number">1</span>
+                                    <span class="popular-posts__title">Как начать программировать</span>
+                                </a>
+                            </li>
+                            <li class="popular-posts__item">
+                                <a href="#" class="popular-posts__link">
+                                    <span class="popular-posts__number">2</span>
+                                    <span class="popular-posts__title">Мой рабочий стол</span>
+                                </a>
+                            </li>
+                            <li class="popular-posts__item">
+                                <a href="#" class="popular-posts__link">
+                                    <span class="popular-posts__number">3</span>
+                                    <span class="popular-posts__title">Инструменты разработчика</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Подписка (призыв к действию) -->
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-widget__title">Подписка</h3>
+                        <p class="sidebar-widget__text">Получайте новые статьи на почту</p>
+                        <form class="subscribe-form">
+                            <input type="email" placeholder="Ваш email" class="subscribe-form__input">
+                            <button type="submit" class="btn btn--full">Подписаться</button>
+                        </form>
+                    </div>
+
+                    <!-- Теги -->
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-widget__title">Теги</h3>
+                        <div class="tags">
+                            <a href="#" class="tag">CSS</a>
+                            <a href="#" class="tag">JavaScript</a>
+                            <a href="#" class="tag">HTML</a>
+                            <a href="#" class="tag">Продуктивность</a>
+                            <a href="#" class="tag">Дизайн</a>
+                        </div>
+                    </div>
+
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Пагинация -->
+    <div class="pagination">
+        <div class="container">
+            <div class="pagination__inner">
+                <a href="#" class="pagination__link pagination__link--prev">← Назад</a>
+                <span class="pagination__current">1</span>
+                <a href="#" class="pagination__link">2</a>
+                <a href="#" class="pagination__link">3</a>
+                <a href="#" class="pagination__link pagination__link--next">Вперёд →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <p class="footer__text">© 2025 scriptizersha hub.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
