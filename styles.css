@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PP Object Sans', sans-serif;
+  background-color: #334a56;
+  color: #ffffff;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  padding: 24px 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.nav__link:hover {
+  opacity: 1;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__title {
+  font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.hero__subtitle {
+  font-size: 24px;
+  opacity: 0.7;
+  margin-bottom: 32px;
+}
+
+/* Button */
+.btn {
+  background-color: #e28395;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.planet {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.planet__img {
+  width: 690px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 40px;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+
+  .planet-placeholder {
+    width: 300px;
+    height: 220px;
+  }
+}
+
+/* Gallery */
+.gallery {
+  margin-top: 120px;
+}
+
+.gallery__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 120px;
+}
+
+.gallery__item--reverse {
+  flex-direction: row-reverse;
+}
+
+.gallery__image img {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.gallery__content {
+  max-width: 400px;
+}
+
+.gallery__title {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.gallery__subtitle {
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+/* Фон */
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Общий стиль blobs */
+.blob {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  pointer-events: none;
+  transition: transform 0.2s ease-out;
+}
+
+/* Цвета */
+.blob--1 {
+  background: #e28395;
+  top: 20%;
+  left: 20%;
+}
+
+.blob--2 {
+  background: #5f8fa3;
+  top: 60%;
+  left: 60%;
+}

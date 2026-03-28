@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astroshaw Blog</title>
+
+  <!-- Шрифт -->
+  <link rel="stylesheet" href="fonts/pp-object-sans.css">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="bg">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">scriptizersha hub</div>
+
+      <nav class="nav">
+        <a href="#" class="nav__link">BLOG</a>
+        <a href="#" class="nav__link">ABOUT</a>
+        <a href="#" class="nav__link">SUPPORT</a>
+      </nav>
+    </div>
+  </header>
+
+<main>
+  <section class="hero">
+    <div class="container hero__inner">
+      
+      <h1 class="hero__title">Мой небольшой блог</h1>
+      <p class="hero__subtitle">о всякой всячине</p>
+
+      <button class="btn">Читать блог</button>
+
+    </div>
+  </section>
+
+  </div>
+</section>
+
+</main>
+
+<script>
+const blob1 = document.querySelector('.blob--1');
+const blob2 = document.querySelector('.blob--2');
+
+document.addEventListener('mousemove', (e) => {
+  const x = e.clientX / window.innerWidth;
+  const y = e.clientY / window.innerHeight;
+
+  // движение с разной скоростью (параллакс)
+  blob1.style.transform = `translate(${x * 500}px, ${y * 500}px)`;
+  blob2.style.transform = `translate(${x * -500}px, ${y * -500}px)`;
+});
+</script>
+
+</body>
+</html>
