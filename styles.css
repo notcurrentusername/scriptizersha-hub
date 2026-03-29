@@ -191,3 +191,17 @@ body {
   top: 60%;
   left: 60%;
 }
+
+/* Изображение в hero секции */
+.hero__image {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__image img {
+    max-width: 100%;
+    width: 200px; /* или любой другой размер */
+    height: auto;
+    border-radius: 20px; /* скругление углов, если нужно */
+}
