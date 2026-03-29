@@ -123,5 +123,19 @@
 
     <script src="loader.js"></script>
     <script src="games.js"></script>
+
+    <script>
+        const blob1 = document.querySelector('.blob--1');
+        const blob2 = document.querySelector('.blob--2');
+
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+
+            // движение с разной скоростью (параллакс)
+            blob1.style.transform = `translate(${x * 500}px, ${y * 500}px)`;
+            blob2.style.transform = `translate(${x * -500}px, ${y * -500}px)`;
+  });
+</script>
 </body>
 </html>
