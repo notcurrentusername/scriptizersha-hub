@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игры | scriptizersha hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="games-styles.css">
+    <link rel="stylesheet" href="loader.css">
+</head>
+<body>
+
+    <!-- Фоновые элементы -->
+    <div class="bg">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">scriptizersha hub</a>
+                <nav class="nav">
+                    <a href="index.html" class="nav__link">Главная</a>
+                    <a href="blog.html" class="nav__link">Блог</a>
+                    <a href="games.html" class="nav__link">Игры</a>
+                    <a href="support.html" class="nav__link">Поддержка</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Заголовок страницы -->
+    <section class="games-header">
+        <div class="container">
+            <div class="games-header__inner">
+                <h1 class="games-header__title">Мини-игры</h1>
+                <p class="games-header__subtitle">Отдохни и поиграй в классические игры</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карточки игр -->
+    <section class="games-grid-section">
+        <div class="container">
+            <div class="games-grid">
+                
+                <!-- Пинг-понг -->
+                <div class="game-card" data-game="pong">
+                    <div class="game-card__image">
+                        <div class="game-card__icon">🏓</div>
+                    </div>
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Пинг-понг</h3>
+                        <p class="game-card__description">Классическая аркада</p>
+                        <span class="game-card__btn">Играть</span>
+                    </div>
+                </div>
+
+                <!-- Тетрис -->
+                <div class="game-card" data-game="tetris">
+                    <div class="game-card__image">
+                        <div class="game-card__icon">🧱</div>
+                    </div>
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Тетрис</h3>
+                        <p class="game-card__description">Собирай линии</p>
+                        <span class="game-card__btn">Играть</span>
+                    </div>
+                </div>
+
+                <!-- Змейка -->
+                <div class="game-card" data-game="snake">
+                    <div class="game-card__image">
+                        <div class="game-card__icon">🐍</div>
+                    </div>
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">Змейка</h3>
+                        <p class="game-card__description">Классика Nokia</p>
+                        <span class="game-card__btn">Играть</span>
+                    </div>
+                </div>
+
+                <!-- DOOM-style shooter -->
+                <div class="game-card" data-game="doom">
+                    <div class="game-card__image">
+                        <div class="game-card__icon">☠️</div>
+                    </div>
+                    <div class="game-card__content">
+                        <h3 class="game-card__title">DOOM-style</h3>
+                        <p class="game-card__description">Rip and tear!</p>
+                        <span class="game-card__btn">Играть</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно для игры -->
+    <div class="game-modal" id="gameModal">
+        <div class="game-modal__overlay"></div>
+        <div class="game-modal__content">
+            <button class="game-modal__close" aria-label="Закрыть">&times;</button>
+            <h3 class="game-modal__title" id="gameTitle">Игра</h3>
+            <div class="game-modal__canvas" id="gameCanvas"></div>
+            <div class="game-modal__controls">
+                <p class="game-modal__score">Счёт: <span id="gameScore">0</span></p>
+                <button class="btn game-modal__restart">Заново</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <p class="footer__text">© 2026 scriptizersha hub. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="loader.js"></script>
+    <script src="games.js"></script>
+</body>
+</html>
