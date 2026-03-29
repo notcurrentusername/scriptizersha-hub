@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поддержка | scriptizersha hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="support-styles.css">
+    <link rel="stylesheet" href="loader.css">
+</head>
+<body>
+   
+
+    <!-- Фоновые элементы -->
+    <div class="bg">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">scriptizersha hub</a>
+                <nav class="nav">
+                    <a href="index.html" class="nav__link">Главная</a>
+                    <a href="blog.html" class="nav__link">Блог</a>
+                    <a href="support.html" class="nav__link">Поддержка</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Заголовок страницы -->
+    <section class="support-header">
+        <div class="container">
+            <div class="support-header__inner">
+                <h1 class="support-header__title">Поддержать проект</h1>
+                <p class="support-header__subtitle">Ваша помощь поможет развивать сайт и моё хобби</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карточки направлений -->
+    <section class="support-directions">
+        <div class="container">
+            <div class="directions-grid">
+                
+                <!-- Направление 1: Развитие сайта -->
+                <div class="direction-card">
+                    <div class="direction-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="32" height="24" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 36V40H32V36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M24 36V40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h2 class="direction-card__title">Развитие сайта</h2>
+                    <p class="direction-card__description">
+                        Средства пойдут на оплату хостинга, домена, улучшение функционала и добавление нового контента
+                    </p>
+                    <ul class="direction-card__list">
+                        <li>💻 Оплата хостинга и домена</li>
+                        <li>🎨 Улучшение дизайна</li>
+                        <li>⚡ Оптимизация скорости</li>
+                        <li>📱 Мобильная версия</li>
+                    </ul>
+                </div>
+
+                <!-- Направление 2: Астрофотография -->
+                <div class="direction-card">
+                    <div class="direction-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                            <path d="M24 4V10M24 38V44M4 24H10M38 24H44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M10 10L14 14M34 34L38 38M10 38L14 34M34 14L38 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h2 class="direction-card__title">Астрофотография</h2>
+                    <p class="direction-card__description">
+                        Помощь в приобретении оборудования для съёмки звёздного неба и глубокого космоса
+                    </p>
+                    <ul class="direction-card__list">
+                        <li>🔭 Телескоп и монтировка</li>
+                        <li>📷 Камера для астрофото</li>
+                        <li>🌙 Фильтры и аксессуары</li>
+                        <li>📊 Программы для обработки</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Прогресс бары -->
+    <section class="support-progress">
+        <div class="container">
+            <h2 class="support-progress__title">Цели сбора</h2>
+            
+            <div class="progress-items">
+                <div class="progress-item">
+                    <div class="progress-item__header">
+                        <span class="progress-item__name">Развитие сайта</span>
+                        <span class="progress-item__amount">10000 ₽</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-bar__fill" style="width: 0%;"></div>
+                    </div>
+                    <span class="progress-item__percent">0%</span>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-item__header">
+                        <span class="progress-item__name">Оборудование для астрофото</span>
+                        <span class="progress-item__amount">25000 ₽</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-bar__fill" style="width: 0%;"></div>
+                    </div>
+                    <span class="progress-item__percent">0%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Способы поддержки -->
+    <section class="support-methods">
+        <div class="container">
+            <h2 class="support-methods__title">Как поддержать</h2>
+            
+            <div class="methods-grid">
+                <div class="method-card">
+                    <div class="method-card__icon">💳</div>
+                    <h3 class="method-card__title">Сбербанк</h3>
+                    <p class="method-card__description">Перевод на карту Сбербанк</p>
+                    <a href="#" class="btn btn--outline" data-modal="support">Поддержать</a>
+                </div>
+
+                <!--<div class="method-card">
+                    <div class="method-card__icon">💰</div>
+                    <h3 class="method-card__title">ЮMoney</h3>
+                    <p class="method-card__description">Быстрый перевод через ЮMoney</p>
+                    <a href="#" class="btn btn--outline">Поддержать</a>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-card__icon"></div>
+                    <h3 class="method-card__title">Boosty</h3>
+                    <p class="method-card__description">Ежемесячная подписка с бонусами</p>
+                    <a href="#" class="btn btn--outline">Поддержать</a>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Спасибо -->
+    <section class="support-thanks">
+        <div class="container">
+            <div class="support-thanks__inner">
+                <h2 class="support-thanks__title">Спасибо за поддержку! 🙏</h2>
+                <p class="support-thanks__text">
+                    Каждый вклад помогает делать проект лучше. Все донаторы будут упомянуты в специальном разделе сайта
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <p class="footer__text">© 2026 scriptizersha hub.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно с QR-кодом -->
+    <div class="modal" id="supportModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть">&times;</button>
+            <h3 class="modal__title">Поддержать проект</h3>
+            <p class="modal__text">Отсканируйте QR-код для перевода</p>
+            <div class="modal__qr">
+                <!-- ВСТАВЬТЕ СЮДА ВАШУ КАРТИНКУ С QR-КОДОМ -->
+                <img src="images/donate.png" alt="QR-код для поддержки">
+            </div>
+            <!--<p class="modal__hint">Или переведите по номеру карты: <strong>0000 0000 0000 0000</strong></p>-->
+        </div>
+    </div>
+
+    <script src="loader.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>

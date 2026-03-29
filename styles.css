@@ -85,6 +85,7 @@ body {
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -203,5 +204,19 @@ body {
     max-width: 100%;
     width: 200px; /* или любой другой размер */
     height: auto;
+ 
     border-radius: 20px; /* скругление углов, если нужно */
+}
+
+.logo {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #fff; /* Цвет текста */
+    cursor: pointer; /* Курсор-указатель */
+    transition: opacity 0.3s ease; /* Плавный эффект */
+}
+
+.logo:hover {
+    opacity: 0.8; /* Эффект при наведении */
 }
