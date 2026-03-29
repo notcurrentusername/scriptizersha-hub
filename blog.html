@@ -133,7 +133,7 @@
                             <img src="images/miku1.jpg" alt="Author" class="author-card__avatar">
                             <h4 class="author-card__name">scriptizersha</h4>
                             <p class="author-card__bio">Типа разработчик и не блогер</p>
-                            <a href="#about" class="author-card__link">Подробнее</a>
+                            <a href="#" class="btn" data-modal="about">Подробнее</a>
                         </div>
                     </div>
 
@@ -202,5 +202,69 @@
         blob2.style.transform = `translate(${x * -500}px, ${y * -500}px)`;
         });
     </script>
+
+    <!-- Модальное окно "Об авторе" -->
+    <div class="about-modal" id="aboutModal">
+        <div class="about-modal__overlay"></div>
+        <div class="about-modal__content">
+            <button class="about-modal__close" aria-label="Закрыть">&times;</button>
+            
+            <div class="about-modal__avatar">
+                <img src="images/miku1.jpg" alt="scriptizersha">
+            </div>
+            
+            <h2 class="about-modal__title">scriptizersha</h2>
+            <p class="about-modal__subtitle">Разработчик и блогер</p>
+            
+            <div class="about-modal__description">
+                <p>Привет! Я создаю веб-проекты, пишу код и делюсь своими знаниями. Увлекаюсь астрофотографией и постоянно изучаю что-то новое.</p>
+                <p>Здесь ты найдёшь мои мысли, идеи и заметки о всякой всячине.</p>
+            </div>
+            
+            <div class="about-modal__socials">
+                <a href="https://t.me/javascriptizersha" target="_blank" class="social-link">Telegram</a>
+                <!-- <a href="https://youtube.com/@your_channel" target="_blank" class="social-link">YouTube</a>-->
+            </div>
+        </div>
+    </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const aboutModal = document.getElementById('aboutModal');
+    const openButtons = document.querySelectorAll('[data-modal="about"]');
+    const closeButton = aboutModal?.querySelector('.about-modal__close');
+    const overlay = aboutModal?.querySelector('.about-modal__overlay');
+
+    function openModal() {
+        if (aboutModal) {
+            aboutModal.classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeModal() {
+        if (aboutModal) {
+            aboutModal.classList.remove('is-open');
+            document.body.style.overflow = '';
+        }
+    }
+
+    openButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            openModal();
+        });
+    });
+
+    if (closeButton) closeButton.addEventListener('click', closeModal);
+    if (overlay) overlay.addEventListener('click', closeModal);
+    
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && aboutModal?.classList.contains('is-open')) {
+            closeModal();
+        }
+    });
+});
+</script>
 </body>
 </html>
